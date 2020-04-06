@@ -1,5 +1,8 @@
 # Millicast-Audio-Video-Multiple-Users
 
+This project requires a MIllicas.com account. 
+https://millicast.com/
+
 1. In your Millicast portal(+) Add a new token M
 Make sure to select Usw ANY name!!!!!!
 
