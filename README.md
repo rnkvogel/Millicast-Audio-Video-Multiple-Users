@@ -1,10 +1,10 @@
 # Millicast-Audio-Video-Multiple-Users
 
-This project requires a MIllicas.com account. 
+This project requires a MIllicast.com account. 
 https://millicast.com/
 
 1. In your Millicast portal(+) Add a new token M
-Make sure to select Usw ANY name!!!!!!
+Make sure to select Use ANY name!
 
 With these files.
 1. Open the JS/Publisher.js file.
