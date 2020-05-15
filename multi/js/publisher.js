@@ -188,7 +188,8 @@ function switchSrc1() {
             let data    = {
               name:  streamName,
               sdp:   desc.sdp,
-              codec: 'h264'
+              //codec: 'h264' // You can update your codec as needed.
+             codec: 'vp8'
             }
             //create payload
             let payload = {
@@ -217,7 +218,7 @@ function switchSrc1() {
           let answer = new RTCSessionDescription({
                                                    type: 'answer',
                           sdp:  data.sdp + "a=x-google-flag:conference\r\n",
-                           sdp: data.sdp + "a=MID:video\r\nb=AS:" + 1500 +"\r\n"
+                           sdp: data.sdp + "a=MID:video\r\nb=AS:" + 1000 +"\r\n"
                                                  });
 
           pc.setRemoteDescription(answer)
