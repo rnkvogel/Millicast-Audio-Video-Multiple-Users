@@ -8,7 +8,6 @@ Make sure to select Use ANY name!
 
 With these files.
 1. Open the JS/Publisher.js file.
-2. Open the JS/viewer.js file.
 EDIT THE FOLLOWING
 
    // hard code it here, or enter it at runtime on the field.
