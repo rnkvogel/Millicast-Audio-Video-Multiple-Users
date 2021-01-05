@@ -8,8 +8,8 @@ let params     = new URLSearchParams(document.location.search.substring(1));
 
 function startPlayer(){
 var accountId = document.getElementById("viewTxt").value;
-var streamName = document.getElementById("streamTxt").value;
-//var subToken = document.getElementById("subToken").value;
+//var streamName = document.getElementById("streamTxt").value;
+var token = document.getElementById("tokenTxt").value;
 var url = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/?account=" + viewTxt + "&token="  + tokenTxt;
  window.open(url);
  }
