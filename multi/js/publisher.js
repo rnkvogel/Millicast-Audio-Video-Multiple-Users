@@ -1,4 +1,5 @@
  //URL to millicast API
+  //const apiPath = 'https://director.millicast.com/api/director/publish';
   const apiPath = 'https://director.millicast.com/api/director/publish';
   const turnUrl = 'https://turn.millicast.com/webrtc/_turn';
 
@@ -6,22 +7,26 @@
   let url;// path to Millicast Server - Returned from API
   let jwt;//authorization token - Returned from API
 
-  // hard code it here, or enter it at runtime on the field.
+   // hard code it here, or enter it at runtime on the field.
    let params = new URLSearchParams(document.location.search.substring(1));
-   let accountId = 'YOURID'; //let accountId ADD YOUR ACCOUNT ID HERE
+   //let accountId = 'LZsuF8'; //let accountId ADD YOUR ACCOUNT ID HERE
    let streamName = params.get('id');
-   let token ="YOUR_TOKEN";
+   //let token ="d63e9c30176ad37e8cf2041209dbfb972378912c29b0473c60d815e2988967db";
+   let accountId = params.get('account');; //let accountId ADD YOUR ACCOUNT ID HERE
+  //let streamName = params.get('streamTxt');
+   let token = params.get('token');
    console.log('Millicast Viewer Stream: ', streamName);
 
-   let stream1 = "https://YOUR_WEB_SITE.com/multi/pub/?id=live1";
-   let stream2 = "https://YOUR_WEB_SITE.com/millicast/multi/pub/?id=live2";
-   let stream3 = "https://YOUR_WEB_SITE.com/millicast/multi/pub/?id=live3";
-   let stream4 = "https://YOUR_WEB_SITE.com/millicast/multi/pub/?id=live4";
+let stream1 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users//multi/pub/?id=live1" + "&account=" + accountId + "&token=" + token;
+   let stream2 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/pub/?id=live2" + "&account" + accountId + "&token" + token;
+   let stream3 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/pub/?id=live3" + "&account" + accountId + "&token" + token;
+   let stream4 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/pub/?id=live4"+ "&account" + accountId + "&token" + token;
 
-   let player1 = "https://viewer.millicast.com/v2?streamId=YOURID/live1";
-   let player2 = "https://viewer.millicast.com/v2?streamId=YOURID/live2";
-   let player3 = "https://viewer.millicast.com/v2?streamId=YOURID/live3";
-   let player4 = "https://viewer.millicast.com/v2?streamId=YOURID/live4";
+
+   let player1 = "https://viewer.millicast.com/v2?streamId="+ accoundId +"/live1";
+   let player2 = "https://viewer.millicast.com/v2?streamId="+ accoundId +"/live2";
+   let player3 = "https://viewer.millicast.com/v2?streamId="+ accoundId +"/live3";
+   let player4 = "https://viewer.millicast.com/v2?streamId="+ accoundId +"/live4";
   
 function switchSrc1() {
     var sites = [stream1]
@@ -188,8 +193,7 @@ function switchSrc1() {
             let data    = {
               name:  streamName,
               sdp:   desc.sdp,
-              //codec: 'h264' // You can update your codec as needed.
-             codec: 'vp8'
+              codec: 'h264'
             }
             //create payload
             let payload = {
@@ -218,7 +222,7 @@ function switchSrc1() {
           let answer = new RTCSessionDescription({
                                                    type: 'answer',
                           sdp:  data.sdp + "a=x-google-flag:conference\r\n",
-                           sdp: data.sdp + "a=MID:video\r\nb=AS:" + 1000 +"\r\n"
+                           //sdp: data.sdp + "a=MID:video\r\nb=AS:" + 1000 +"\r\n"
                                                  });
 
           pc.setRemoteDescription(answer)
@@ -434,7 +438,7 @@ function switchSrc1() {
         video: {
           width:  1280,
           height: 720,
-          frameRate: 24 ,
+          frameRate: 29.97,
           advanced: [
           { aspectRatio: 16/9 }
           ]
