@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Millicast Multi</title>
+  <link rel="stylesheet" href="css/multi.css">
+  <script src="js/publisher.js"></script>
+</head>
+<body>
+  <div id="dividedbox">
+    <div class="quarter" id="box1" >
+    <iframe  id="user1" src="" frameborder="0" scrolling="no" width="100%" height="100%" >
+    </iframe> 
+    <input type="button" id="buttonGo1" onclick="switchSrc1()" value="Publish 1"  />
+    </div>
+
+    <div class="quarter" id="box2">
+     <iframe id="user2"  src="" frameborder="0" scrolling="no" >
+    </iframe>
+     <input type="button" id="buttonGo2" onclick="switchSrc2()" value="Publish 2"  /> 
+    </div>
+
+    <div class="quarter" id="box3">
+     <iframe id="user3"  src="" frameborder="0" scrolling="no" width="100%" height="100%">
+     </iframe>
+    <input type="button" id="buttonGo3" onclick="switchSrc3()" value="Publish 3"  />  
+    </div>​
+
+    <div class="quarter" id="box4">
+     <iframe id="user4" src="" frameborder="0" scrolling="no" width="100%" height="100%">
+    </iframe>
+      <input type="button" id="buttonGo4" onclick="switchSrc4()" value="Publish 4"  />   	
+    </div>
+    <div id="form" class="">
+        <input id="tokenTxt" class="base-input" type="hidden" value="" placeholder="Token"/>
+        <input id="streamTxt" class="base-input ml-10 mr-10" type="hidden" value="" placeholder="Stream Name"/>
+        <input id="viewTxt" class="base-input" type="hidden" value="" placeholder="Account Id"/>
+    </div>
+  </div>
+</body>
+
+</html>
