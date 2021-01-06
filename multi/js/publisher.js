@@ -18,9 +18,9 @@
    console.log('Millicast Viewer Stream: ', streamName);
 
 let stream1 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users//multi/pub/?id=live1" + "&account=" + accountId + "&token=" + token;
-   let stream2 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/pub/?id=live2" + "&account" + accountId + "&token" + token;
-   let stream3 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/pub/?id=live3" + "&account" + accountId + "&token" + token;
-   let stream4 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/pub/?id=live4"+ "&account" + accountId + "&token" + token;
+   let stream2 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/pub/?id=live2" + "&account=" + accountId + "&token=" + token;
+   let stream3 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/pub/?id=live3" + "&account=" + accountId + "&token=" + token;
+   let stream4 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/pub/?id=live4"+ "&account=" + accountId + "&token=" + token;
 
 
    let player1 = "https://viewer.millicast.com/v2?streamId=" + accountId + "/live1";
