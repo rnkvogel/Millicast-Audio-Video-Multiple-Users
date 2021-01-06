@@ -23,10 +23,10 @@ let stream1 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users//
    let stream4 = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/pub/?id=live4"+ "&account" + accountId + "&token" + token;
 
 
-   let player1 = "https://viewer.millicast.com/v2?streamId="+ accoundId +"/live1";
-   let player2 = "https://viewer.millicast.com/v2?streamId="+ accoundId +"/live2";
-   let player3 = "https://viewer.millicast.com/v2?streamId="+ accoundId +"/live3";
-   let player4 = "https://viewer.millicast.com/v2?streamId="+ accoundId +"/live4";
+   let player1 = "https://viewer.millicast.com/v2?streamId="+ accountId +"/live1";
+   let player2 = "https://viewer.millicast.com/v2?streamId="+ accountId +"/live2";
+   let player3 = "https://viewer.millicast.com/v2?streamId="+ accountId +"/live3";
+   let player4 = "https://viewer.millicast.com/v2?streamId="+ accountId +"/live4";
   
 function switchSrc1() {
     var sites = [stream1]
