@@ -2,28 +2,27 @@
 <html>
 <head>
 <title>Multi User Example</title>
-<script>
+
+<body>
+ <H1>Multiple User Demo</H1>
+<div id="form" class="account-data">
+<input id="tokenTxt" class="base-input" type="text" value="" placeholder="Publishing Token" />
+<input id="viewTxt" class="base-input" type="text" value="" placeholder="Account Id"/>
+</div>
+
+<button id="startPlayer" class="btn-audio"  onClick="startPlayer()" type="button">Start Session</button>
+</div>
+</body>
+ <script>
 let params     = new URLSearchParams(document.location.search.substring(1));
 // SubscribingToken - placed here for ease of tes	
 
 function startPlayer(){
 var accountId = document.getElementById("viewTxt").value;
-//var streamName = document.getElementById("streamTxt").value;
 var token = document.getElementById("tokenTxt").value;
 var url = "https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/multi/?account=" + viewTxt + "&token="  + tokenTxt;
  window.open(url);
  }
 
 </script>
-
-<body>
-<div id="form" class="account-data">
-<input id="tokenTxt" class="base-input" type="text" value="" placeholder="Publishing Token" />
-<input id="viewTxt" class="base-input" type="text" value="" placeholder="Account Id"/>
-
- </div>
-
-<button id="startPlayer" class="btn-audio"  onClick="startPlayer()" type="button">Start Session</button>
-</div>
-</body>
 </html
