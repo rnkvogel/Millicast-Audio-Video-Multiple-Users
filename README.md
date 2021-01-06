@@ -16,6 +16,11 @@ EDIT THE FOLLOWING
    let streamName = params.get('id');
    let token ="YOUR_TOKEN";
    console.log('Millicast Viewer Stream: ', streamName);
+   
+DEMO
+
+You can test this build using you millicast account and token.
+https://rnkvogel.github.io/Millicast-Audio-Video-Multiple-Users/
 
 EDIT THE FOLLOWING ON PUBLISHER JS.
 1. Open the JS/Publisher.js file.
