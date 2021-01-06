@@ -39,9 +39,6 @@ let token ="YOUR TOKEN GOES HERE";
    let stream3 = "https://YOUR_WEB_SITE.com/millicast/multi/pub/?id=live3";
    let stream4 = "https://YOUR_WEB_SITE.com/millicast/multi/pub/?id=live4";
 
-   let player1 = "https://viewer.millicast.com/v2?streamId=YOURID/live1";
-   let player2 = "https://viewer.millicast.com/v2?streamId=YOURID/live2";
-   let player3 = "https://viewer.millicast.com/v2?streamId=YOURID/live3";
-   let player4 = "https://viewer.millicast.com/v2?streamId=YOURID/live4";
+
 
  Your ready to stream and customize your way.  
